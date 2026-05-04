@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="52" viewBox="0 0 240 52">
+<foreignObject width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+.badge{
+  width:240px;height:52px;
+  background:#0b0c0b;
+  border:1px solid #1a2a24;
+  border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  font-family:ui-monospace,'SF Mono','Fira Mono',Consolas,monospace;
+}
+/* top edge accent */
+.badge::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,#1fe8a8,transparent);
+}
+.label{
+  font-size:17px;font-weight:700;
+  letter-spacing:0.22em;text-transform:uppercase;
+  color:#1fe8a8;
+  position:relative;
+  user-select:none;
+}
+/* ghost layers for chromatic aberration */
+.label::before,
+.label::after{
+  content:'VRIL LABS';
+  position:absolute;top:0;left:0;
+  width:100%;height:100%;
+  opacity:0;
+}
+.label::before{color:#ff3366;mix-blend-mode:screen;}
+.label::after {color:#33ffee;mix-blend-mode:screen;}
+
+/* glitch fires every ~5s, lasts ~0.5s */
+.label{
+  animation:glitch-main 5s steps(1) infinite;
+}
+.label::before{
+  animation:glitch-r 5s steps(1) infinite;
+}
+.label::after{
+  animation:glitch-c 5s steps(1) infinite;
+}
+@keyframes glitch-main{
+  0%,89%,100%{transform:none;opacity:1}
+  90%{transform:skewX(-1deg) translateX(2px);opacity:0.9}
+  91%{transform:none;opacity:1}
+  93%{transform:skewX(0.5deg) translateX(-1px);opacity:0.95}
+  94%{transform:none;opacity:1}
+  96%{transform:skewX(-0.5deg) translateX(1px);opacity:0.9}
+  97%{transform:none;opacity:1}
+}
+@keyframes glitch-r{
+  0%,89%,100%{transform:translateX(0);opacity:0}
+  90%{transform:translateX(-3px);opacity:0.7}
+  91%{opacity:0}
+  93%{transform:translateX(2px);opacity:0.5}
+  94%{opacity:0}
+  96%{transform:translateX(-2px);opacity:0.6}
+  97%{opacity:0}
+}
+@keyframes glitch-c{
+  0%,89%,100%{transform:translateX(0);opacity:0}
+  90%{transform:translateX(3px);opacity:0.6}
+  91%{opacity:0}
+  93%{transform:translateX(-2px);opacity:0.5}
+  94%{opacity:0}
+  96%{transform:translateX(2px);opacity:0.55}
+  97%{opacity:0}
+}
+/* scan flicker */
+.scan{
+  position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(31,232,168,0.025) 3px,rgba(31,232,168,0.025) 4px);
+  pointer-events:none;
+  animation:flicker 5s steps(1) infinite;
+}
+@keyframes flicker{
+  0%,89%,100%{opacity:1}
+  90%{opacity:0.6}
+  91%{opacity:1}
+  93%{opacity:0.7}
+  94%{opacity:1}
+}
+/* corner brackets — pure CSS -->
+.br{position:absolute;width:8px;height:8px;border-color:#1fe8a8;border-style:solid;opacity:0.5;}
+.br-tl{top:5px;left:5px;border-width:1px 0 0 1px;}
+.br-tr{top:5px;right:5px;border-width:1px 1px 0 0;}
+.br-bl{bottom:5px;left:5px;border-width:0 0 1px 1px;}
+.br-br{bottom:5px;right:5px;border-width:0 1px 1px 0;}
+</style>
+<div class="badge">
+  <div class="scan"></div>
+  <div class="br br-tl"></div>
+  <div class="br br-tr"></div>
+  <div class="br br-bl"></div>
+  <div class="br br-br"></div>
+  <div class="label">VRIL LABS</div>
+</div>
+</div>
+</foreignObject>
+</svg>

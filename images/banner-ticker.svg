@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="48" viewBox="0 0 800 48">
+<foreignObject width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+.wrap{
+  width:800px;height:48px;overflow:hidden;
+  background:#0b0c0b;
+  border-top:1px solid #1a2a24;
+  border-bottom:1px solid #1a2a24;
+  position:relative;
+  font-family:ui-monospace,'SF Mono','Fira Mono',monospace;
+}
+.scan{
+  position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(31,232,168,0.04),transparent);
+  animation:scan 4s linear infinite;
+  pointer-events:none;z-index:2;
+}
+@keyframes scan{from{left:-60%}to{left:110%}}
+.ticker{
+  display:flex;align-items:center;height:100%;
+  white-space:nowrap;
+  animation:scroll 28s linear infinite;
+  gap:0;
+}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.item{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:0 28px;
+  font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
+  color:#4a7060;
+}
+.item .dot{
+  width:4px;height:4px;border-radius:50%;
+  background:#1fe8a8;opacity:0.7;flex-shrink:0;
+}
+.item .label{color:#1fe8a8;opacity:0.85;}
+.sep{color:#1a3028;padding:0 4px;font-size:14px;}
+</style>
+<div class="wrap">
+  <div class="scan"></div>
+  <div class="ticker">
+    <span class="item"><span class="dot"></span><span class="label">VRIL-KEM</span> POST-QUANTUM CRYPTOGRAPHY</span>
+    <span class="item"><span class="dot"></span><span class="label">MLWE</span> N=4096 · K=7 · Q=12289</span>
+    <span class="item"><span class="dot"></span><span class="label">CVKDF</span> 7-LAYER FIBONACCI CASCADE</span>
+    <span class="item"><span class="dot"></span><span class="label">VRIL-AI</span> BETTERFANN · WASM RUNTIME</span>
+    <span class="item"><span class="dot"></span><span class="label">VRIL-ZIP</span> ENTROPY COMPRESSION · φ-WEIGHTED</span>
+    <span class="item"><span class="dot"></span><span class="label">IND-CCA2</span> EASYCRYPT MACHINE-CHECKED PROOF</span>
+    <span class="item"><span class="dot"></span><span class="label">AVX2</span> 16-WAY SIMD · 6–7× THROUGHPUT</span>
+    <span class="item"><span class="dot"></span><span class="label">FPGA</span> 40µS ON VU13P · 400× SW BASELINE</span>
+    <!-- duplicate for seamless loop -->
+    <span class="item"><span class="dot"></span><span class="label">VRIL-KEM</span> POST-QUANTUM CRYPTOGRAPHY</span>
+    <span class="item"><span class="dot"></span><span class="label">MLWE</span> N=4096 · K=7 · Q=12289</span>
+    <span class="item"><span class="dot"></span><span class="label">CVKDF</span> 7-LAYER FIBONACCI CASCADE</span>
+    <span class="item"><span class="dot"></span><span class="label">VRIL-AI</span> BETTERFANN · WASM RUNTIME</span>
+    <span class="item"><span class="dot"></span><span class="label">VRIL-ZIP</span> ENTROPY COMPRESSION · φ-WEIGHTED</span>
+    <span class="item"><span class="dot"></span><span class="label">IND-CCA2</span> EASYCRYPT MACHINE-CHECKED PROOF</span>
+    <span class="item"><span class="dot"></span><span class="label">AVX2</span> 16-WAY SIMD · 6–7× THROUGHPUT</span>
+    <span class="item"><span class="dot"></span><span class="label">FPGA</span> 40µS ON VU13P · 400× SW BASELINE</span>
+  </div>
+</div>
+</div>
+</foreignObject>
+</svg>

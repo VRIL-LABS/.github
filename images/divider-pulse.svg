@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="16" viewBox="0 0 800 16">
+<defs>
+  <linearGradient id="wire-grad" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0%"   stop-color="#1a2a24" stop-opacity="0"/>
+    <stop offset="8%"   stop-color="#1a2a24" stop-opacity="1"/>
+    <stop offset="92%"  stop-color="#1a2a24" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#1a2a24" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- comet gradient: bright head → dim tail → transparent -->
+  <linearGradient id="comet" x1="0" x2="1" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%"   stop-color="#1fe8a8" stop-opacity="0"/>
+    <stop offset="60%"  stop-color="#1fe8a8" stop-opacity="0.35"/>
+    <stop offset="88%"  stop-color="#5ef5c8" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+  </linearGradient>
+
+  <filter id="div-glow" x="-5%" y="-200%" width="110%" height="500%">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<!-- wire baseline -->
+<line x1="0" y1="8" x2="800" y2="8"
+  stroke="url(#wire-grad)" stroke-width="1"/>
+
+<!-- secondary dim wire for depth -->
+<line x1="0" y1="8" x2="800" y2="8"
+  stroke="#0f1a16" stroke-width="2.5"/>
+<line x1="0" y1="8" x2="800" y2="8"
+  stroke="#1a2a24" stroke-width="1"/>
+
+<!-- traveling comet packet — rect slides from x=-120 to x=800 -->
+<!-- total path: 920px, travel time 2.2s, pause 1.4s = 3.6s cycle -->
+<rect y="4" width="120" height="8" fill="url(#comet)" filter="url(#div-glow)">
+  <animateTransform attributeName="transform" type="translate"
+    values="-120 0; 800 0; 800 0"
+    keyTimes="0; 0.61; 1"
+    calcMode="spline"
+    keySplines="0.4 0 0.6 1; 0 0 1 1"
+    dur="3.6s" repeatCount="indefinite"/>
+</rect>
+
+<!-- head dot — bright leading point -->
+<circle cy="8" r="3" fill="#ffffff" filter="url(#div-glow)" opacity="0.9">
+  <animateTransform attributeName="transform" type="translate"
+    values="-1 0; 801 0; 801 0"
+    keyTimes="0; 0.61; 1"
+    calcMode="spline"
+    keySplines="0.4 0 0.6 1; 0 0 1 1"
+    dur="3.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity"
+    values="0;0;0.95;0.95;0"
+    keyTimes="0;0.03;0.08;0.58;0.63"
+    dur="3.6s" repeatCount="indefinite"/>
+</circle>
+
+<!-- left-edge node -->
+<circle cx="4" cy="8" r="2" fill="#1a2a24"/>
+<circle cx="4" cy="8" r="1" fill="#1fe8a8" opacity="0.3">
+  <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3.6s" repeatCount="indefinite"/>
+</circle>
+
+<!-- right-edge node -->
+<circle cx="796" cy="8" r="2" fill="#1a2a24"/>
+<circle cx="796" cy="8" r="1" fill="#1fe8a8" opacity="0.3">
+  <animate attributeName="opacity"
+    values="0.2;0.2;0.7;0.2"
+    keyTimes="0;0.58;0.65;1"
+    dur="3.6s" repeatCount="indefinite"/>
+</circle>
+</svg>

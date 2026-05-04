@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<defs>
+  <radialGradient id="vx-bg" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#1fe8a8" stop-opacity="0.1"/>
+    <stop offset="100%" stop-color="#1fe8a8" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="vx-glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="vx-core" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<!-- background atmosphere -->
+<circle cx="80" cy="80" r="78" fill="url(#vx-bg)">
+  <animate attributeName="opacity" values="0.7;1;0.7" dur="2.8s" repeatCount="indefinite"/>
+</circle>
+
+<!-- spiral arms — innermost to outermost so outer renders on top -->
+<g filter="url(#vx-glow)">
+  <path d="M 142.00,80.00 A 62,62 0 1,1 69.23,18.94"
+    fill="none" stroke="#1fe8a8" stroke-width="3.5"
+    stroke-opacity="0.55" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 80 80" to="-360 80 80"
+      dur="3.0s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity"
+      values="0.55;0.22;0.55"
+      dur="3.0s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 96.07,129.45 A 52,52 0 1,1 125.91,55.59"
+    fill="none" stroke="#1fe8a8" stroke-width="3.1"
+    stroke-opacity="0.63" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 80 80" to="-360 80 80"
+      dur="3.6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity"
+      values="0.63;0.25;0.63"
+      dur="3.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 46.02,104.69 A 42,42 0 1,1 110.21,109.18"
+    fill="none" stroke="#1fe8a8" stroke-width="2.7"
+    stroke-opacity="0.71" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 80 80" to="-360 80 80"
+      dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity"
+      values="0.71;0.28;0.71"
+      dur="4.2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 54.11,61.19 A 32,32 0 1,1 65.97,108.76"
+    fill="none" stroke="#5ef5c8" stroke-width="2.3"
+    stroke-opacity="0.79" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 80 80" to="-360 80 80"
+      dur="4.8s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity"
+      values="0.79;0.32;0.79"
+      dur="4.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 86.80,59.08 A 22,22 0 1,1 58.21,76.94"
+    fill="none" stroke="#5ef5c8" stroke-width="1.9"
+    stroke-opacity="0.87" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 80 80" to="-360 80 80"
+      dur="5.4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity"
+      values="0.87;0.35;0.87"
+      dur="5.4s" repeatCount="indefinite"/>
+  </path>
+</g>
+
+<!-- expanding void ring at outermost — "mouth" of the vortex -->
+<circle cx="80" cy="80" r="70" fill="none"
+  stroke="#1fe8a8" stroke-width="0.6" stroke-opacity="0.12"
+  stroke-dasharray="6 10"/>
+
+<!-- core implosion nucleus -->
+<g filter="url(#vx-core)">
+  <!-- ripple rings -->
+  <circle cx="80" cy="80" r="8" fill="none" stroke="#1fe8a8" stroke-width="1.2">
+    <animate attributeName="r" values="5;16;5" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <!-- solid core -->
+  <circle cx="80" cy="80" r="6" fill="#1fe8a8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="5;7;5" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="80" r="2.5" fill="#0b0c0b"/>
+  <circle cx="80" cy="80" r="1" fill="#1fe8a8"/>
+</g>
+</svg>

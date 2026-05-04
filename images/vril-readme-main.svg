@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 520" width="1000" height="520"
+     role="img" aria-label="VRIL LABS — Vintage Terminal">
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      @keyframes blink { 50% { opacity: 0 } }
+      .cursor { animation: blink 1s steps(1) infinite; }
+    ]]></style>
+
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071018"/>
+      <stop offset="100%" stop-color="#031016"/>
+    </linearGradient>
+
+    <!-- Top rainbow line -->
+    <linearGradient id="tl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00d9c0"/>
+      <stop offset="52%"  stop-color="#0087ff"/>
+      <stop offset="100%" stop-color="#9b5eff"/>
+    </linearGradient>
+
+    <!-- Screen panel background -->
+    <linearGradient id="sc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- Hero wrap background -->
+    <linearGradient id="hg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.015"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.06"/>
+    </linearGradient>
+
+    <!-- Frame background -->
+    <linearGradient id="fg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glyph glow filter (blur + merge for soft halo) -->
+    <filter id="gg" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Globe cuneiform fill pattern -->
+    <pattern id="cp" patternUnits="userSpaceOnUse" width="16" height="16">
+      <rect width="16" height="16" fill="transparent"/>
+      <text x="0" y="12" font-size="8"
+            font-family="'Noto Sans Cuneiform','Segoe UI Symbol',serif"
+            fill="rgba(0,244,192,0.16)">𒀭𒁹𒊭𒃻</text>
+    </pattern>
+    <pattern id="cpb" patternUnits="userSpaceOnUse" width="24" height="24">
+      <rect width="24" height="24" fill="transparent"/>
+      <text x="0" y="16" font-size="10"
+            font-family="'Noto Sans Cuneiform','Segoe UI Symbol',serif"
+            fill="rgba(0,244,192,0.36)">𒊹𒅆𒌋</text>
+    </pattern>
+
+    <!-- Globe glow filter -->
+    <filter id="globeglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Logo drop shadow — defined in parent coordinate space for crisp vector rendering -->
+    <filter id="logodrop" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6"
+                    flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 0: MAIN BACKGROUND                           -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect width="1000" height="520" fill="url(#bg)" rx="6"/>
+  <rect width="1000" height="520" fill="none" rx="6" stroke="rgba(255,255,255,0.03)"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 1: CUNEIFORM GLYPH BACKGROUND               -->
+  <!-- 22 clusters across 6 columns, each with a         -->
+  <!-- SMIL fill-opacity pulse + blur glow filter        -->
+  <!-- Color matches accent font: #00f4c0                -->
+  <!-- ═══════════════════════════════════════════════════ -->
+
+  <!-- Column 1 (~x 35–165) -->
+  <text x="38"  y="68"  font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒀭𒁹𒊭𒃻𒂗𒂗𒀯<animate attributeName="fill-opacity" values="0.06;0.06;0.20;0.08;0.06" keyTimes="0;0.35;0.50;0.65;1" dur="5.5s" begin="0.3s"  repeatCount="indefinite"/></text>
+  <text x="38"  y="148" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.11" filter="url(#gg)">𒊭𒌋𒉽𒊭𒇲𒌋<animate  attributeName="fill-opacity" values="0.11;0.22;0.11;0.11"         keyTimes="0;0.50;0.55;1"         dur="4.3s" begin="1.2s"  repeatCount="indefinite"/></text>
+  <text x="38"  y="228" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.32" filter="url(#gg)">𒊭𒇲𒅗𒂗𒆠𒈦𒃻<animate attributeName="fill-opacity" values="0.32;0.06;0.06;0.32"         keyTimes="0;0.25;0.75;1"         dur="3.8s" begin="2.1s"  repeatCount="indefinite"/></text>
+  <text x="38"  y="308" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.11" filter="url(#gg)">𒄀𒈦𒃻𒁹𒊭𒆠𒇲<animate attributeName="fill-opacity" values="0.11;0.11;0.22;0.11"         keyTimes="0;0.40;0.50;1"         dur="6.1s" begin="0.8s"  repeatCount="indefinite"/></text>
+  <text x="38"  y="388" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒈦𒅗𒁹𒁹𒌋𒂗𒂗<animate attributeName="fill-opacity" values="0.06;0.18;0.06;0.06"         keyTimes="0;0.50;0.55;1"         dur="5.0s" begin="3.5s"  repeatCount="indefinite"/></text>
+
+  <!-- Column 2 (~x 200–325) -->
+  <text x="200" y="68"  font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒇲𒈦𒁹𒇲𒂗𒊭𒉽<animate attributeName="fill-opacity" values="0.06;0.16;0.06;0.06"         keyTimes="0;0.50;0.60;1"         dur="4.8s" begin="1.7s"  repeatCount="indefinite"/></text>
+  <text x="200" y="178" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.32" filter="url(#gg)">𒊭𒇲𒅗𒂗𒆠𒈦𒃻<animate attributeName="fill-opacity" values="0.06;0.32;0.32;0.06"         keyTimes="0;0.20;0.80;1"         dur="5.2s" begin="0.5s"  repeatCount="indefinite"/></text>
+  <text x="200" y="288" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒁹𒀯𒊭𒅗𒄀𒃻𒀯<animate attributeName="fill-opacity" values="0.06;0.06;0.14;0.06"         keyTimes="0;0.50;0.55;1"         dur="6.5s" begin="2.8s"  repeatCount="indefinite"/></text>
+
+  <!-- Column 3 (~x 360–485) -->
+  <text x="365" y="90"  font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒊹𒅆𒌋𒌋𒅗𒌋𒄀<animate attributeName="fill-opacity" values="0.06;0.18;0.06;0.06"         keyTimes="0;0.50;0.60;1"         dur="4.5s" begin="3.2s"  repeatCount="indefinite"/></text>
+  <text x="365" y="188" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.11" filter="url(#gg)">𒄀𒈦𒃻𒁹𒊭𒆠𒇲<animate attributeName="fill-opacity" values="0.11;0.22;0.11;0.11"         keyTimes="0;0.50;0.60;1"         dur="5.7s" begin="1.1s"  repeatCount="indefinite"/></text>
+  <text x="365" y="288" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒌋𒅗𒌋𒇲𒃻𒉽𒈦<animate attributeName="fill-opacity" values="0.06;0.06;0.16;0.06"         keyTimes="0;0.45;0.55;1"         dur="3.9s" begin="2.6s"  repeatCount="indefinite"/></text>
+
+  <!-- Column 4 (~x 522–647) -->
+  <text x="528" y="78"  font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒄀𒈦𒂗𒊭𒌋𒁹𒉽<animate attributeName="fill-opacity" values="0.06;0.06;0.20;0.06"         keyTimes="0;0.40;0.50;1"         dur="6.2s" begin="0.9s"  repeatCount="indefinite"/></text>
+  <text x="528" y="178" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.32" filter="url(#gg)">𒂗𒃻𒌋𒂗𒌋𒅗𒃻<animate attributeName="fill-opacity" values="0.06;0.32;0.06"            keyTimes="0;0.50;1"              dur="4.6s" begin="1.8s"  repeatCount="indefinite"/></text>
+  <text x="528" y="278" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒆠𒉽𒄀𒀯𒄀𒄀𒂗<animate attributeName="fill-opacity" values="0.06;0.12;0.06;0.06"         keyTimes="0;0.50;0.60;1"         dur="5.3s" begin="3.7s"  repeatCount="indefinite"/></text>
+
+  <!-- Column 5 (~x 683–808) -->
+  <text x="688" y="68"  font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒅆𒀭𒈦𒉽𒀯𒇲𒊭<animate attributeName="fill-opacity" values="0.06;0.16;0.06;0.06"         keyTimes="0;0.50;0.60;1"         dur="5.9s" begin="0.4s"  repeatCount="indefinite"/></text>
+  <text x="688" y="178" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.11" filter="url(#gg)">𒂗𒀯𒆠𒅗𒃻𒉽𒊭<animate attributeName="fill-opacity" values="0.11;0.22;0.11;0.11"         keyTimes="0;0.50;0.60;1"         dur="4.1s" begin="2.3s"  repeatCount="indefinite"/></text>
+  <text x="688" y="278" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒇲𒂗𒉽𒄀𒁹𒂗𒁹<animate attributeName="fill-opacity" values="0.06;0.06;0.14;0.06"         keyTimes="0;0.45;0.55;1"         dur="6.8s" begin="1.6s"  repeatCount="indefinite"/></text>
+
+  <!-- Column 6 (~x 845–970) -->
+  <text x="848" y="75"  font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒄀𒅗𒃻𒌋𒂗𒈦𒊭<animate attributeName="fill-opacity" values="0.06;0.18;0.06;0.06"         keyTimes="0;0.50;0.60;1"         dur="5.4s" begin="0.7s"  repeatCount="indefinite"/></text>
+  <text x="848" y="158" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.11" filter="url(#gg)">𒂗𒀯𒆠𒅗𒃻𒉽𒊭<animate attributeName="fill-opacity" values="0.11;0.20;0.11;0.11"         keyTimes="0;0.50;0.60;1"         dur="4.7s" begin="1.9s"  repeatCount="indefinite"/></text>
+  <text x="848" y="238" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.11" filter="url(#gg)">𒄀𒈦𒃻𒁹𒊭𒆠𒇲<animate attributeName="fill-opacity" values="0.11;0.22;0.11;0.11"         keyTimes="0;0.50;0.60;1"         dur="5.0s" begin="3.0s"  repeatCount="indefinite"/></text>
+  <text x="848" y="318" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.32" filter="url(#gg)">𒄀𒂗𒉽𒆠𒅗𒉽𒆠<animate attributeName="fill-opacity" values="0.06;0.32;0.06"            keyTimes="0;0.50;1"              dur="3.6s" begin="0.2s"  repeatCount="indefinite"/></text>
+  <text x="848" y="398" font-family="'Segoe UI Symbol','Noto Sans Cuneiform',serif,monospace" font-size="8" fill="#00f4c0" fill-opacity="0.06" filter="url(#gg)">𒀯𒃻𒀯𒂗𒊭𒇲𒇲<animate attributeName="fill-opacity" values="0.06;0.06;0.16;0.06"         keyTimes="0;0.45;0.55;1"         dur="6.3s" begin="2.5s"  repeatCount="indefinite"/></text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 2: TOP GRADIENT LINE                        -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="16" y="17" width="968" height="1" fill="url(#tl)" opacity="0.9"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 3: TITLE DOTS (window chrome)               -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <g fill="rgba(255,255,255,0.03)">
+    <circle cx="30" cy="33" r="4.2"/>
+    <circle cx="42" cy="33" r="4.2"/>
+    <circle cx="54" cy="33" r="4.2"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 4: SCREEN PANEL                             -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="16" y="48" width="968" height="456" rx="4"
+        fill="url(#sc)" stroke="rgba(0,244,192,0.03)"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FRAME: ASCII box art + globe icon                 -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="24" y="57" width="951" height="68" rx="6"
+        fill="url(#fg)" stroke="rgba(255,255,255,0.02)"/>
+
+  <!-- ASCII box: 3 lines @ 13px JetBrains Mono / Courier New monospace -->
+  <text xml:space="preserve" x="31" y="73"
+        font-family="'JetBrains Mono','Courier New',Courier,monospace"
+        font-size="13" fill="#00f4c0">&#x250C;&#x2500;&#x2500;&#x2500;&#x2510;&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;</text>
+  <text xml:space="preserve" x="31" y="87"
+        font-family="'JetBrains Mono','Courier New',Courier,monospace"
+        font-size="13" fill="#00f4c0">&#x2502;&#x25C4; &#x25BA;&#x2502;&#x2502;          &#x26A1;&#xFE0E;&#x20DD; VRIL.LI        &#x200A;&#x200A;&#x21BB;   &#x2502;</text>
+  <text xml:space="preserve" x="31" y="101"
+        font-family="'JetBrains Mono','Courier New',Courier,monospace"
+        font-size="13" fill="#00f4c0">&#x2514;&#x2500;&#x2500;&#x2500;&#x2518;&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;</text>
+
+  <!-- Globe icon: top=8px right=10px from frame (frame x=24 w=951 → right=975; globe left=923, top=65) -->
+  <g transform="translate(923,65)">
+    <circle cx="21" cy="21" r="20" fill="transparent"
+            stroke="rgba(0,0,0,0.55)" stroke-width="2"/>
+    <g filter="url(#globeglow)">
+      <circle cx="21" cy="21" r="17" fill="url(#cp)"/>
+      <circle cx="21" cy="21" r="17" fill="url(#cpb)" opacity="0.18"/>
+      <path d="M21 4 A17 17 0 0 0 21 38" fill="none"
+            stroke="rgba(0,244,192,0.12)" stroke-width="1.2"/>
+      <path d="M11 6 A16 16 0 0 0 31 36" fill="none"
+            stroke="rgba(0,244,192,0.08)" stroke-width="0.9"/>
+      <ellipse cx="21" cy="21" rx="15" ry="5" fill="none"
+               stroke="rgba(0,244,192,0.14)" stroke-width="1.2"/>
+      <path d="M31 10 C29 8,25 7,21 7" fill="none"
+            stroke="rgba(0,244,192,0.28)" stroke-width="1.5"
+            stroke-linecap="round"/>
+      <ellipse cx="15" cy="14" rx="5" ry="2"
+               fill="rgba(255,255,255,0.03)"/>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- HERO WRAP: inline logo + caption                  -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="24" y="133" width="951" height="185" rx="6"
+        fill="url(#hg)" stroke="rgba(0,244,192,0.03)"/>
+  <!-- inset glow simulation -->
+  <rect x="24" y="133" width="951" height="185" rx="6"
+        fill="none" stroke="rgba(0,244,192,0.04)"/>
+
+  <!-- INLINE LOGO from images/logo.svg — path inlined at parent-SVG scale   -->
+  <!-- No nested <svg> (avoids browser rasterization of nested viewports)    -->
+  <!-- SMIL animateTransform: no CSS compositing layer → always crisp vector  -->
+  <!-- Scale: 120/1365=0.08791; center (682.5,682.5)→(500,213) in parent px  -->
+  <g>
+    <path fill="#00f4c0"
+          transform="translate(440,153) scale(0.08791208)"
+          d="M 694.733337 245.333374 C 694.200012 324.266724 694.333313 360 695.400024 360 C 696.466675 360 763.400024 338.666748 769.133362 336.400024 C 770.06665 336 748.200012 392.400024 720.466675 461.599976 C 692.733337 530.799988 669.533325 588.799988 669.133362 590.400024 C 668.200012 593.333313 668.333313 593.333313 681.266663 593.466675 C 690.06665 593.466675 697.400024 594.400024 703.666687 596.133362 C 708.866638 597.599976 714.200012 599.06665 715.666687 599.466675 C 717.666687 600 730.06665 591.200012 765.666687 564 C 791.666687 544 824.466675 518.93335 838.599976 508.133362 C 852.599976 497.466675 863.799988 488.266663 863.266663 487.733337 C 862.733337 487.333313 848.733337 480.533325 832.06665 472.666687 C 815.266663 464.799988 801.666687 458 801.666687 457.466675 C 801.666687 457.06665 824.06665 444 851.400024 428.666687 C 905.133362 398.400024 1021.133362 332.800049 1059.533325 310.800049 C 1072.599976 303.333374 1083.533325 297.466675 1083.800049 297.733276 C 1084.06665 298 1073.93335 308.400024 1061.400024 320.666626 C 990.866638 389.599976 919 460.799988 919 461.599976 C 919 462.266663 934.733337 470.533325 953.93335 480.133362 C 988.333313 497.333313 988.866638 497.599976 985.266663 499.466675 C 979.533325 502.533325 804.06665 582 757.93335 602.400024 C 749.666687 606.133362 745 608.93335 745.93335 609.466675 C 747.93158 610.576782 807.071045 628.89917 859.781067 644.983948 C 902.033325 657.877502 940.154175 669.333313 941.400024 669.333313 C 942.466675 669.333313 943 668.533325 942.599976 667.599976 C 937.533325 654 920.200012 601.06665 920.733337 600.533325 C 921.133362 600.133362 948.06665 608.533325 980.599976 619.06665 C 1013 629.733337 1082.333374 652.266663 1134.333374 669.200012 C 1186.466675 686 1231.400024 700.799988 1234.333374 701.866638 C 1239.533325 703.733337 1239.533325 703.866638 1235.666626 703.866638 C 1233.533325 703.866638 1207.666626 702.533325 1178.333374 700.666687 C 1065.93335 693.866638 1001.666687 690.266663 1001 690.93335 C 1000.599976 691.200012 1003 699.599976 1006.333313 709.466675 C 1018.333313 745.466675 1025.266724 768 1024.466675 767.466675 C 1024.06665 767.200012 1009.533325 760.93335 992.333313 753.599976 C 965.133362 742 919.93335 722.533325 794.599976 668.533325 C 778.733337 661.599976 765.266663 656 765 656 C 763.799988 656 765.133362 658.400024 823.666687 764.666687 C 840.200012 794.799988 854.866638 821.599976 864.466675 838.93335 C 869.133362 847.599976 873.266663 854.666626 873.666687 854.533325 C 874.06665 854.533325 881.400024 840 890.06665 822.400024 L 905.799988 790.133362 L 915.93335 808.799988 C 927.533325 830 967.93335 903.866699 978.333313 922.666626 C 985.266663 935.200012 1010.200012 980.533325 1047 1047.333374 C 1057.400024 1066.400024 1066.333374 1082.400024 1066.599976 1082.93335 C 1068.466675 1086.266602 1063.800049 1081.599976 1044.199951 1060.93335 C 1009.666687 1024.533325 911.799988 922.533325 905.93335 916.799988 L 900.599976 911.733337 L 896.733337 918.266663 C 894.733337 922 886.06665 938.266663 877.666687 954.533325 C 869.266663 970.666626 861.93335 984 861.533325 984 C 861 984 859.666687 981.466675 858.599976 978.266663 C 857.533325 975.200012 834.866638 917.733337 808.466675 850.666626 C 781.93335 783.599976 759.533325 726.799988 758.733337 724.666687 C 756.333313 718.266663 755.666687 718.266663 751.799988 724 C 749.799988 727.06665 746.200012 731.733337 743.799988 734.400024 C 739.666687 739.06665 738.466675 743.06665 724.599976 797.333313 C 699.799988 894.533325 689.266663 937.333374 690.06665 938.133301 C 690.466675 938.533325 705.666687 933.866699 723.93335 927.599976 C 742.06665 921.333374 757.133362 916.400024 757.400024 916.666626 C 757.666687 916.93335 739 983.333374 715.799988 1064.266602 C 692.733337 1145.06665 672.333313 1216.666626 670.333313 1223.333374 L 667 1235.333374 L 667.666687 1193.333374 C 669.533325 1077.866699 670.06665 994.666626 668.866638 994.666626 C 668.200012 994.666626 650.599976 1000.400024 629.799988 1007.333374 C 609.133362 1014.266663 592.333313 1019.200012 592.733337 1018.266663 C 593.133362 1017.333374 604.06665 990.266663 617 958 C 630.06665 925.733337 653.133362 868.400024 668.333313 830.533325 L 695.93335 761.599976 L 679.799988 761.06665 C 667.93335 760.533325 661.400024 759.599976 654.866638 757.466675 L 646.06665 754.400024 L 611.533325 780.799988 C 520.200012 850.533325 503.533356 863.200012 501.800018 864.666626 C 500.466705 866 506.200043 869.333374 532.200012 882.133301 C 549.93335 890.666626 564.333313 898.133301 564.333313 898.533325 C 564.333313 898.93335 559.93335 901.733337 554.599976 904.533325 C 530.866638 917.466675 379.399994 1001.733337 308.333344 1041.599976 C 293.266663 1050 279.533325 1057.733398 277.666656 1058.666626 C 274.466675 1060.266602 306.066681 1028.93335 403.266693 934 C 431.533356 906.400024 445.000031 892.266663 443.93335 891.599976 C 443.000031 890.93335 426.866699 882.533325 408.066711 872.799988 L 373.666656 855.200012 L 436.066711 827.333313 C 470.333374 812 525 787.599976 557.400024 773.06665 C 589.93335 758.533325 617.133362 746.666687 617.799988 746.666687 C 624.06665 746.666687 607.93335 741.200012 538.733337 720.133362 C 439.133362 689.733337 420.333374 684.133362 420.333374 685.06665 C 420.333374 685.466675 425.400024 700.666687 431.666687 718.93335 C 437.93335 737.200012 443.000031 752.666687 443.000031 753.333313 C 443.000031 753.866638 414.333374 744.93335 379.399994 733.333313 C 325.799988 715.466675 176.46666 666.799988 136.066666 653.866638 C 129.666672 651.866638 124.599998 650 124.73333 649.866638 C 125 649.599976 148.46666 650.93335 177 652.666687 C 275.533325 658.93335 362.200012 664 362.600006 663.599976 C 362.733337 663.333313 360.866669 656.93335 358.333344 649.200012 C 350.600006 626.266663 338.733337 587.866638 339.133331 587.466675 C 339.399994 587.200012 348.333344 590.799988 359 595.333313 C 472.866699 644.533325 513 661.866638 552.06665 678.93335 C 577.266663 690 598.200012 698.666687 598.466675 698.266663 C 598.866638 697.866638 588.733337 678.799988 575.93335 655.733337 C 563.266663 632.799988 544.466675 598.93335 534.333313 580.666687 C 497.93335 514.799988 490.733368 502 489.93335 501.06665 C 489.400024 500.533325 482.066711 514.533325 473.666687 532.133362 C 465.266693 549.599976 458.066711 564 457.666687 564 C 457.266693 563.866638 453.400024 557.200012 448.866699 548.93335 C 437.266693 527.733337 359.933319 388.93335 305 290.93335 C 300.866669 283.333374 297.533325 277.06665 297.799988 276.800049 C 298.066681 276.666626 309.399994 287.866699 323 301.866699 C 420.733368 402.799988 462.333374 445.333313 463.000031 445.333313 C 463.400024 445.333313 472.066711 429.06665 482.200043 409.200012 C 492.466705 389.466675 501.133362 373.733337 501.666687 374.266663 C 502.200043 374.799988 514.733337 405.866638 529.666687 443.333313 C 571.266663 548.133362 605.93335 633.866638 607 635.200012 C 607.666687 635.733337 608.733337 635.06665 609.533325 633.466675 C 610.333313 632 614.06665 627.06665 617.799988 622.666687 C 623.533325 615.733337 625 612.666687 627.799988 602.266663 C 632.466675 585.06665 675 418 675 416.93335 C 675 416.533325 659.93335 421.200012 641.400024 427.466675 C 623 433.599976 607.666687 438.400024 607.533325 438.266663 C 607.266663 438 622.333313 384.266663 641 318.666626 C 659.666687 253.06665 679.266663 183.866699 684.599976 165.06665 C 689.93335 146.133301 694.599976 130.666626 694.866638 130.666626 C 695.133362 130.666626 695.133362 182.266724 694.733337 245.333374 Z">
+      <!-- SMIL rotation around path-space center (682.5,682.5) = parent (500,213) -->
+      <animateTransform attributeName="transform"
+        type="rotate" additive="sum"
+        from="0 682.5 682.5" to="360 682.5 682.5"
+        dur="30s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Hero caption -->
+  <text x="500" y="305" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="12" font-weight="700"
+        fill="rgba(0,244,192,0.55)">Research &amp; Development Consortium</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- TERMINAL PROMPT: $ C:\ VRIL LABS + blinking cursor -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- "$ C:\ " = 6 chars, "VRIL LABS" = 9 chars         -->
+  <!-- At 13px Courier New: 1ch ≈ 7.8px                  -->
+  <!-- Total = 15 chars × 7.8 = 117px; cursor at x=148   -->
+  <text xml:space="preserve" x="31" y="345"
+        font-family="'Courier New',Courier,monospace"
+        font-size="13" fill="#00f4c0"><tspan font-weight="bold">$</tspan> C:\ <tspan id="vril-title">VRIL LABS</tspan></text>
+
+  <!-- Blinking block cursor (0.6ch wide ≈ 5px, 1.05em ≈ 14px) -->
+  <rect x="149" y="332" width="5" height="14"
+        fill="#00f4c0" class="cursor"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LINKS: 6 groups, left-aligned, 110px wide, 12px gap-->
+  <!-- x positions: 29, 151, 273, 395, 517, 639           -->
+  <!-- ═══════════════════════════════════════════════════ -->
+
+  <!-- VRIL-KEM -->
+  <a href="https://vril.li/products#panel-libraries" target="_blank">
+    <rect x="29"  y="366" width="110" height="32" rx="4"
+          fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.02)"
+          style="cursor:pointer"/>
+    <text x="84"  y="387" text-anchor="middle"
+          font-family="'Courier New',Courier,monospace"
+          font-size="14" font-weight="700" fill="rgba(0,244,192,0.95)">VRIL-KEM</text>
+  </a>
+  <text x="84"  y="407" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">KEM Protocols</text>
+  <text x="84"  y="419" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">&amp; PQC Stack</text>
+
+  <!-- RESEARCH -->
+  <a href="https://vril.li/research" target="_blank">
+    <rect x="151" y="366" width="110" height="32" rx="4"
+          fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.02)"
+          style="cursor:pointer"/>
+    <text x="206" y="387" text-anchor="middle"
+          font-family="'Courier New',Courier,monospace"
+          font-size="14" font-weight="700" fill="rgba(0,244,192,0.95)">RESEARCH</text>
+  </a>
+  <text x="206" y="407" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">Papers, Notes</text>
+  <text x="206" y="419" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">&amp; Field Reports</text>
+
+  <!-- NEWS -->
+  <a href="https://vril.li/news" target="_blank">
+    <rect x="273" y="366" width="110" height="32" rx="4"
+          fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.02)"
+          style="cursor:pointer"/>
+    <text x="328" y="387" text-anchor="middle"
+          font-family="'Courier New',Courier,monospace"
+          font-size="14" font-weight="700" fill="rgba(0,244,192,0.95)">NEWS</text>
+  </a>
+  <text x="328" y="407" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">Updates, Logs</text>
+  <text x="328" y="419" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">&amp; Releases</text>
+
+  <!-- CONTACT -->
+  <a href="https://vril.li/contact" target="_blank">
+    <rect x="395" y="366" width="110" height="32" rx="4"
+          fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.02)"
+          style="cursor:pointer"/>
+    <text x="450" y="387" text-anchor="middle"
+          font-family="'Courier New',Courier,monospace"
+          font-size="14" font-weight="700" fill="rgba(0,244,192,0.95)">CONTACT</text>
+  </a>
+  <text x="450" y="407" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">Secure Channel</text>
+  <text x="450" y="419" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">&amp; Outreach</text>
+
+  <!-- DONATE -->
+  <a href="https://vril.li/donate" target="_blank">
+    <rect x="517" y="366" width="110" height="32" rx="4"
+          fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.02)"
+          style="cursor:pointer"/>
+    <text x="572" y="387" text-anchor="middle"
+          font-family="'Courier New',Courier,monospace"
+          font-size="14" font-weight="700" fill="rgba(0,244,192,0.95)">DONATE</text>
+  </a>
+  <text x="572" y="407" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">Support the Lab</text>
+  <text x="572" y="419" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="10" fill="rgba(0,244,192,0.55)">&amp; Infrastructure</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FOOTER                                            -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <text x="975" y="455" text-anchor="end"
+        font-family="'Courier New',Courier,monospace"
+        font-size="12" fill="rgba(0,244,192,0.25)">Last update  &#x2022;  05-Jul-1947 09:42:59</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- SCRIPT: VRIL LABS encrypt/decrypt scramble        -->
+  <!-- Periodically replaces each letter with a random   -->
+  <!-- hieroglyph/cuneiform glyph, then restores it      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <script type="text/javascript"><![CDATA[
+  (function () {
+    'use strict';
+    var el = document.getElementById('vril-title');
+    if (!el) return;
+    var ORIGINAL = 'VRIL LABS';
+    /* Pool: Sumerian cuneiform + Egyptian hieroglyphs + Greek capitals */
+    var POOL = [
+      '\u{12000}','\u{12039}','\u{122AD}','\u{120FB}','\u{12097}','\u{1200F}','\u{1230B}',
+      '\u{12249}','\u{122D7}','\u{12157}','\u{121A6}','\u{12226}','\u{12100}',
+      '\u{13000}','\u{136B8}','\u{13080}','\u{130ED}','\u{13110}','\u{130A0}',
+      '\u{1306A}','\u{1306F}','\u{1309A}','\u{130BD}','\u{130C5}','\u{136FA}',
+      '\u03A6','\u03A8','\u039E','\u03A3','\u03A9','\u03A0','\u0393','\u0398','\u039B'
+    ];
+    function rg() { return POOL[Math.floor(Math.random() * POOL.length)]; }
+    function runScramble() {
+      var frame = 0, total = 24;
+      var timer = setInterval(function () {
+        var p = frame / total;
+        el.textContent = ORIGINAL.split('').map(function (ch) {
+          if (ch === ' ') return ' ';
+          if (p > 0.55) return Math.random() < (p - 0.55) / 0.45 ? ch : rg();
+          return rg();
+        }).join('');
+        frame += 1;
+        if (frame >= total) { clearInterval(timer); el.textContent = ORIGINAL; }
+      }, 75);
+    }
+    setTimeout(runScramble, 2500);
+    setInterval(runScramble, 7000);
+  }());
+  ]]></script>
+
+</svg>
