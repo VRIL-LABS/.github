@@ -7,10 +7,6 @@
 />
 </div>
 
-<div align="center">
-<img src="images//quantum-field.svg" width="800" height="160" alt="VRIL LABS quantum field lattice"/>
-</div>
-
 <div align="center" style="margin:0 auto;padding:0;">
 
 <img
@@ -121,6 +117,12 @@ Every design decision traces to a named structural flaw in prior implementations
 <br/><br/>
 
 <img src="/images/divider-pulse.svg" width="800" height="16" alt=""/>
+
+<div align="center">
+<img src="images//quantum-field.svg" width="800" height="160" alt="VRIL LABS quantum field lattice"/>
+</div>
+
+<br/><br/>
 
 <div align="center">
 
