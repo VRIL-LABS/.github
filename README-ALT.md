@@ -64,7 +64,7 @@ CVKDF layers    7           Fibonacci weights   [1,1,2,3,5,8,13]
 ```
 
 <div align="center">
-<img src="images/stat-cards.svg" width="800" height="110" alt="VRIL LABS performance metrics"/>
+<img src="images/stat-cards.svg" width="100%" height="110" alt="VRIL LABS performance metrics"/>
 </div>
 
 Every design decision traces to a named structural flaw in prior implementations:
@@ -116,10 +116,10 @@ Every design decision traces to a named structural flaw in prior implementations
 
 <br/><br/>
 
-<img src="/images/divider-pulse.svg" width="800" height="16" alt=""/>
+<img src="/images/divider-pulse.svg" width="100%" height="16" alt=""/>
 
 <div align="center">
-<img src="images//quantum-field.svg" width="800" height="160" alt="VRIL LABS quantum field lattice"/>
+<img src="images//quantum-field.svg" width="100%" height="160" alt="VRIL LABS quantum field lattice"/>
 </div>
 
 <br/>
