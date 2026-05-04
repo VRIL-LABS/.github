@@ -1,25 +1,40 @@
+<div align="center" style="margin:0;padding:0;">
+  <img
+  src="images/banner-ticker.svg"
+  width="100%"
+  height="160"
+  alt="VRIL LABS — implosion energy mark"
+/>
+</div>
+
+<div align="center" style="margin:0 auto;padding:0;">
+
+<img
+  src="images/vril-readme-main.svg"
+  width="100%"
+  height="100%"
+  alt="VRIL LABS — terminal interface"
+/>
+
+[![vril.li](https://img.shields.io/badge/vril.li-visit-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li)
+[![VRIL-KEM](https://img.shields.io/badge/KEM-PQC-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li/research)
+[![Research](https://img.shields.io/badge/Research-Papers%20%26%20Proofs-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li/research)
+[![News](https://img.shields.io/badge/News-News%20%26%20Articles-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li/contact)
+[![Contact](https://img.shields.io/badge/Contact-Secure%20Channel-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li/news)
+[![Donate](https://img.shields.io/badge/Donate-Fund%20the%20Future-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li/donate)
+</div>
+
 <div align="center">
 
-<img src="images/logo.svg" width="200" height="200" alt="VRIL LABS implosion emblem"/>
+  <br/><br/>
+  
+<img src="images/badge-glitch.svg" width="240" height="52" alt="VRIL LABS"/>
 
-<h1>VRIL LABS</h1>
 <p><sup>ANCIENT KNOWLEDGE &nbsp;·&nbsp; FUTURE TECHNOLOGY</sup></p>
-<br/><br/>
+<br/>
 
 <p><em>Post-quantum cryptography &nbsp;·&nbsp; Entropy compression &nbsp;·&nbsp; Sovereign technology &nbsp;·&nbsp; Where ancient wisdom meets computational power &nbsp;·&nbsp; Bridging the gap between primordial forces and modern science</em></p>
 <br/><br/>
-
-<img src="images/badge-glitch.svg" width="240" height="52" alt="VRIL LABS"/>
-
-<br/><br/>
-
-<img src="images/banner-ticker.svg" width="800" height="48" alt="VRIL LABS research signal feed"/>
-
-<br/>
-
-[![vril.li](https://img.shields.io/badge/vril.li-visit-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li)
-[![Research](https://img.shields.io/badge/Research-Papers%20%26%20Proofs-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li#research)
-[![Contact](https://img.shields.io/badge/Contact-Secure%20Channel-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li#contact)
 
 </div>
 
@@ -29,7 +44,7 @@
 
 <img src="images/divider-pulse.svg" width="800" height="16" alt=""/>
 
-## <img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/icon-lightning.svg" width="22" height="22" alt=""/> Sovereign Components
+## <img src="/images/icon-lightning.svg" width="22" height="22" alt=""/> Sovereign Components
 
 > Four precision-engineered systems. Each purpose-built to be structurally superior to anything that came before.
 
@@ -40,12 +55,12 @@
 | **[VRIL-ZIP](https://vril.li)** | Entropy Compression | 7-layer Fibonacci cascade · φ-weighted · lossless · CVKDF-integrated |
 | **VRIL-PROXY / MESH / CERT / HSM** | Ecosystem | Sovereign infrastructure stack — active development |
 
-<img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/divider-pulse.svg" width="800" height="16" alt=""/>
+<img src="images//divider-pulse.svg" width="800" height="16" alt=""/>
 
-## <img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/icon-vortex.svg" width="22" height="22" alt=""/> The Cryptographic Core
+## <img src="/images/icon-vortex.svg" width="22" height="22" alt=""/> The Cryptographic Core
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/quantum-field.svg" width="800" height="160" alt="VRIL LABS quantum field lattice"/>
+<img src="images//quantum-field.svg" width="800" height="160" alt="VRIL LABS quantum field lattice"/>
 </div>
 
 VRIL-KEM is built on **Module-Learning-with-Errors** with parameters chosen to defeat both classical and quantum adversaries.
@@ -57,19 +72,19 @@ CVKDF layers    7           Fibonacci weights   [1,1,2,3,5,8,13]
 ```
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/stat-cards.svg" width="800" height="110" alt="VRIL LABS performance metrics"/>
+<img src="images/stat-cards.svg" width="800" height="110" alt="VRIL LABS performance metrics"/>
 </div>
 
 Every design decision traces to a named structural flaw in prior implementations:
 
-- <img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/icon-lightning.svg" width="16" height="16" alt=""/> **CVKDF One-Wayness** — Classical linear key-compression replaced by 7-layer Fibonacci-weighted geometric cascade. EasyCrypt-proven 2⁻¹²⁸ bound.
-- <img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/icon-lightning.svg" width="16" height="16" alt=""/> **HI-Gaussian vs CBD** — Hierarchical-Interleaved Gaussian with golden-ratio scaling over standard centered binomial distribution.
-- <img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/icon-lightning.svg" width="16" height="16" alt=""/> **AVX2 NTT Butterflies** — 16-way SIMD delivers 6–7× throughput. FPGA achieves 40µs on VU13P — 400× over software baseline.
-- <img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/icon-lightning.svg" width="16" height="16" alt=""/> **Constant-Time Masking** — Full DPA/timing resistance. 1st & 3rd order Boolean/arithmetic masking. TVLA-verified.
+- <img src="images/icon-lightning.svg" width="16" height="16" alt=""/> **CVKDF One-Wayness** — Classical linear key-compression replaced by 7-layer Fibonacci-weighted geometric cascade. EasyCrypt-proven 2⁻¹²⁸ bound.
+- <img src="images/icon-lightning.svg" width="16" height="16" alt=""/> **HI-Gaussian vs CBD** — Hierarchical-Interleaved Gaussian with golden-ratio scaling over standard centered binomial distribution.
+- <img src="/images/icon-lightning.svg" width="16" height="16" alt=""/> **AVX2 NTT Butterflies** — 16-way SIMD delivers 6–7× throughput. FPGA achieves 40µs on VU13P — 400× over software baseline.
+- <img src="/images/icon-lightning.svg" width="16" height="16" alt=""/> **Constant-Time Masking** — Full DPA/timing resistance. 1st & 3rd order Boolean/arithmetic masking. TVLA-verified.
 
-<img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/divider-pulse.svg" width="800" height="16" alt=""/>
+<img src="/images/divider-pulse.svg" width="800" height="16" alt=""/>
 
-## Performance Benchmarks
+## <img src="/images/icon-lightning.svg" width="22" height="22" alt=""/> Performance Benchmarks
 
 | Variant | Security | pk Size | Latency (AVX2) | Use Case |
 |---|---|---|---|---|
@@ -77,9 +92,9 @@ Every design decision traces to a named structural flaw in prior implementations
 | **VRIL-4096-7** | **384-bit** | **~46 KB** | **2.4ms** | **Production (default)** |
 | VRIL-8192-11 | 512-bit | ~180 KB | < 8ms | Ultra-High Security |
 
-<img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/divider-pulse.svg" width="800" height="16" alt=""/>
+<img src="/images/divider-pulse.svg" width="800" height="16" alt=""/>
 
-## Research Log
+## <img src="/images/icon-vortex.svg" width="22" height="22" alt=""/> Research Log
 
 | Period | Phase | Milestone |
 |---|---|---|
@@ -90,9 +105,9 @@ Every design decision traces to a named structural flaw in prior implementations
 | 2026 Q1 | Integration | TLS 1.3 · OpenSSL provider · Hybrid X25519+VRIL-KEM · < 5ms overhead |
 | 2026 Q2 | Upcoming | VRIL-AI v1 · VRIL-ZIP Beta · IETF draft for VRIL-KEM TLS extension |
 
-<img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/divider-pulse.svg" width="800" height="16" alt=""/>
+<img src="/images/divider-pulse.svg" width="800" height="16" alt=""/>
 
-## <img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/icon-vortex.svg" width="22" height="22" alt=""/> Philosophy
+## <img src="/images/icon-vortex.svg" width="22" height="22" alt=""/> Philosophy
 
 ```
 01  Proof-First Design      Security is not claimed — it is machine-checked.
@@ -103,7 +118,7 @@ Every design decision traces to a named structural flaw in prior implementations
 06  Production from Day One No mocks. No TODOs. No placeholders. It ships.
 ```
 
-<img src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/divider-pulse.svg" width="800" height="16" alt=""/>
+<img src="/images/divider-pulse.svg" width="800" height="16" alt=""/>
 
 <div align="center">
 
@@ -111,4 +126,8 @@ Every design decision traces to a named structural flaw in prior implementations
 
 <sub>© 2026 VRIL LABS — Post-Quantum Sovereign Technology</sub>
 
+</div>
+
+<div align="center" style="margin:0;padding:0;">
+<img src="images/logo.svg" width="50" height="50" alt="VRIL LABS implosion emblem"/>
 </div>
