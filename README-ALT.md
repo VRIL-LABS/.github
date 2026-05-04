@@ -39,13 +39,10 @@
 <br/>
 
 <p><em>Post-quantum cryptography &nbsp;·&nbsp; Entropy compression &nbsp;·&nbsp; Sovereign technology &nbsp;·&nbsp; Where ancient wisdom meets computational power &nbsp;·&nbsp; Bridging the gap between primordial forces and modern science</em></p>
-<br/><br/>
 
 </div>
 
 <br/>
-
-<img src="images/terminal-boot.svg" width="800" height="260" alt="VRIL LABS terminal boot sequence"/>
 
 ## <img src="/images/icon-lightning.svg" width="22" height="22" alt=""/> Sovereign Components
 
@@ -81,7 +78,7 @@ Every design decision traces to a named structural flaw in prior implementations
 - <img src="/images/icon-lightning.svg" width="16" height="16" alt=""/> **AVX2 NTT Butterflies** — 16-way SIMD delivers 6–7× throughput. FPGA achieves 40µs on VU13P — 400× over software baseline.
 - <img src="/images/icon-lightning.svg" width="16" height="16" alt=""/> **Constant-Time Masking** — Full DPA/timing resistance. 1st & 3rd order Boolean/arithmetic masking. TVLA-verified.
 
-<br/><br/>
+<br/>
 
 ## <img src="/images/icon-lightning.svg" width="22" height="22" alt=""/> Performance Benchmarks
 
@@ -91,7 +88,11 @@ Every design decision traces to a named structural flaw in prior implementations
 | **VRIL-4096-7** | **384-bit** | **~46 KB** | **2.4ms** | **Production (default)** |
 | VRIL-8192-11 | 512-bit | ~180 KB | < 8ms | Ultra-High Security |
 
-<br/><br/>
+<div align="center">
+<img src="images/terminal-boot.svg" width="800" height="260" alt="VRIL LABS terminal boot sequence"/>
+</div>
+
+<br/>
 
 ## <img src="/images/icon-vortex.svg" width="22" height="22" alt=""/> Research Log
 
@@ -102,9 +103,9 @@ Every design decision traces to a named structural flaw in prior implementations
 | 2026 Q1 | Performance | AVX2 16-way SIMD · FPGA RTL complete · ASIC targets documented |
 | 2026 Q1 | Security | DPA/timing resistance · Boolean & arithmetic masking · maskVerif |
 | 2026 Q1 | Integration | TLS 1.3 · OpenSSL provider · Hybrid X25519+VRIL-KEM · < 5ms overhead |
-| 2026 Q2 | Upcoming | VRIL-AI v1 · VRIL-ZIP Beta · IETF draft for VRIL-KEM TLS extension |
+| 2026 Q2 | Upcoming | VRIL-AI v1 · VRIL-ZIP Beta · IETF draft for VRIL-KEM TLS extension 
 
-<br/><br/>
+<br/>
 
 ## <img src="/images/icon-vortex.svg" width="22" height="22" alt=""/> Philosophy
 
@@ -117,11 +118,13 @@ Every design decision traces to a named structural flaw in prior implementations
 06  Production from Day One No mocks. No TODOs. No placeholders. It ships.
 ```
 
+<br/><br/>
+
 <img src="/images/divider-pulse.svg" width="800" height="16" alt=""/>
 
 <div align="center">
 
-**[vril.li](https://vril.li) &nbsp;·&nbsp; [Research](https://vril.li#research) &nbsp;·&nbsp; [Contact](https://vril.li#contact)**
+**[vril.li](https://vril.li) &nbsp;·&nbsp; [Research](https://vril.li#research) &nbsp;·&nbsp; [Contact](https://vril.li#contact) &nbsp;·&nbsp; [Contact](https://vril.li#contact)** &nbsp;·&nbsp; **[Donate](https://vril.li#donate)**
 
 <sub>© 2026 VRIL LABS — Post-Quantum Sovereign Technology</sub>
 
