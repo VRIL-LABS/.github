@@ -1,7 +1,7 @@
 <div align="center">
 
 <img
-  src="https://raw.githubusercontent.com/vril-labs/.github/main/profile/assets/logo.svg"
+  src="images/logo.svg"
   width="160"
   height="160"
   alt="VRIL LABS — implosion energy mark"
