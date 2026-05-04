@@ -1,9 +1,18 @@
-<div align="center">
+<div align="center" style="margin:0;padding:0;">
+  <img
+  src="images/banner-ticker.svg"
+  width="100%"
+  height="160"
+  alt="VRIL LABS — implosion energy mark"
+/>
+</div>
+
+<div align="center" style="margin:0 auto;padding:0;">
 
 <img
-  src="images/logo.svg"
-  width="160"
-  height="160"
+  src="images/vril-readme-main.svg"
+  width="100%"
+  height="100%"
   alt="VRIL LABS — implosion energy mark"
 />
 
