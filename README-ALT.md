@@ -122,7 +122,7 @@ Every design decision traces to a named structural flaw in prior implementations
 <img src="images//quantum-field.svg" width="800" height="160" alt="VRIL LABS quantum field lattice"/>
 </div>
 
-<br/><br/>
+<br/>
 
 <div align="center">
 
