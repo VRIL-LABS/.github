@@ -45,9 +45,9 @@ Bridging the gap between primordial forces and modern science.</em></p>
 
 | Component | Domain | Key Specs |
 |---|---|---|
-| **[VRIL-KEM](https://vril.li)** | Post-Quantum Cryptography | 384-bit quantum security · MLWE n=4096 · 7-layer CVKDF · IND-CCA2 (EasyCrypt) |
-| **[VRIL-AI](https://vril.li)** | Neural Intelligence | betterFANN architecture · WASM runtime · UiLLM interface · typed tensor flows |
-| **[VRIL-ZIP](https://vril.li)** | Entropy Compression | 7-layer Fibonacci cascade · φ-weighted · lossless · CVKDF-integrated |
+| **[VRIL-KEM](https://github.com/VRIL-LABS/vril-kem)** | Post-Quantum Cryptography | 384-bit quantum security · MLWE n=4096 · 7-layer CVKDF · IND-CCA2 (EasyCrypt) |
+| **[VRIL-AI]([https://vril.li](https://github.com/VRIL-LABS/betterfann))** | Neural Intelligence | betterFANN architecture · WASM runtime · UiLLM interface · typed tensor flows |
+| **[VRIL-ZIP]([https://vril.li](https://github.com/VRIL-LABS/vril-zip)** | Entropy Compression | 7-layer Fibonacci cascade · φ-weighted · lossless · CVKDF-integrated |
 | **VRIL-PROXY / MESH / CERT / HSM** | Ecosystem | Sovereign infrastructure stack — active development |
 
 ---
