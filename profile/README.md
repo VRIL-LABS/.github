@@ -18,8 +18,6 @@
 
 <h1>VRIL&nbsp;LABS</h1>
 
-<p><strong>Post-Quantum Sovereign Technology</strong></p>
-
 <p><em>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression</em></p>
 
 <br/>
