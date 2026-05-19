@@ -109,6 +109,6 @@ Every design decision traces to a named structural flaw in prior implementations
 
 **[vril.li](https://vril.li) &nbsp;·&nbsp; [Research](https://vril.li/research) &nbsp;·&nbsp; [News](https://vril.li/news) &nbsp;·&nbsp; [Contact](https://vril.li/contact) &nbsp;·&nbsp; [$VCUR](https://vril.li/coin) &nbsp;·&nbsp; [Donate](https://vril.li/donate)**
 
-<sub>© 2026 VRIL LABS — Post-Quantum Sovereign Technology</sub>
+<sub>© 2026 VRIL LABS — Encrypting the future</sub>
 
 </div>
