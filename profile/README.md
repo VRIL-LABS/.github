@@ -88,7 +88,7 @@ Every design decision traces to a named structural flaw in prior implementations
 | 2026 Q1 | Performance | AVX2 16-way SIMD · FPGA RTL complete · ASIC targets documented |
 | 2026 Q1 | Security | DPA/timing resistance · Boolean & arithmetic masking · maskVerif |
 | 2026 Q1 | Integration | TLS 1.3 · OpenSSL provider · Hybrid X25519+VRIL-KEM · < 5ms overhead |
-| 2026 Q2 | Upcoming | VRIL-AI v1 · VRIL-ZIP Beta · IETF draft for VRIL-KEM TLS extension |
+| 2026 Q2 | Upcoming | VRIL-AI v1 · VRIL-ZIP v3 · IETF draft for VRIL-KEM TLS extension |
 
 ---
 
