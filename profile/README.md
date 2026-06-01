@@ -18,14 +18,13 @@
 
 <h1>VRIL&nbsp;LABS</h1>
 
-<p><em>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression</em></p>
-
 <br/>
 
-<p><sup>ANCIENT KNOWLEDGE &nbsp;·&nbsp; FUTURE TECHNOLOGY</sup></p>
+<p><sup>ANCIENT KNOWLEDGE &nbsp;·&nbsp; FUTURE TECHNOLOGY</sup><br/>
+<em><sub><small>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression</small><sub></em></p>
 
-<p><em>Where ancient wisdom meets computational power.<br/>
-Bridging the gap between primordial forces and modern science.</em></p>
+<p><sub><small>Where ancient wisdom meets computational power.<br/>
+Bridging the gap between primordial forces and modern science.</small><sub></p>
 
 <br/>
 
