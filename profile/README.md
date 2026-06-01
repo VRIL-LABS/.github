@@ -21,7 +21,7 @@
 <br/>
 
 <p><sup>ANCIENT KNOWLEDGE &nbsp;·&nbsp; FUTURE TECHNOLOGY</sup><br/>
-<em><sub><small>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression</small><sub></em></p>
+<em><sub><small>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression &nbsp;·&nbsp; Deep-technology</small><sub></em></p>
 
 <p><sub><small>Where ancient wisdom meets computational power.<br/>
 Bridging the gap between primordial forces and modern science.</small><sub></p>
