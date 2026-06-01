@@ -36,7 +36,13 @@ Bridging the gap between primordial forces and modern science.</small><sub></p>
 
 ---
 
-## Sovereign Components
+<h2><img
+  src="images/icon-vortex.svg"
+  width="26px"
+  height="26px"
+  alt="VRIL LABS — vortex icon"
+  style="margin-right:10px;display:inline;"
+/> Soverign Components</h2>
 
 > Four precision-engineered systems. Each purpose-built to be structurally superior to anything that came before.
 
@@ -49,7 +55,13 @@ Bridging the gap between primordial forces and modern science.</small><sub></p>
 
 ---
 
-## The Cryptographic Core
+<h2><img
+  src="images/icon-vortex.svg"
+  width="26px"
+  height="26px"
+  alt="VRIL LABS — vortex icon"
+  style="margin-right:10px;display:inline;"
+/> Cryptographic Core</h2>
 
 VRIL-KEM is built on **Module-Learning-with-Errors** with parameters chosen to defeat both classical and quantum adversaries.
 
@@ -68,7 +80,13 @@ Every design decision traces to a named structural flaw in prior implementations
 
 ---
 
-## Performance Benchmarks
+<h2><img
+  src="images/icon-vortex.svg"
+  width="26px"
+  height="26px"
+  alt="VRIL LABS — vortex icon"
+  style="margin-right:10px;display:inline;"
+/> Performance Benchmarks</h2>
 
 | Variant | Security | pk Size | Latency (AVX2) | Use Case |
 |---|---|---|---|---|
@@ -78,7 +96,13 @@ Every design decision traces to a named structural flaw in prior implementations
 
 ---
 
-## Research Log
+<h2><img
+  src="images/icon-vortex.svg"
+  width="26px"
+  height="26px"
+  alt="VRIL LABS — vortex icon"
+  style="margin-right:10px;display:inline;"
+/> Research Log</h2>
 
 | Period | Phase | Milestone |
 |---|---|---|
@@ -89,9 +113,15 @@ Every design decision traces to a named structural flaw in prior implementations
 | 2026 Q1 | Integration | TLS 1.3 · OpenSSL provider · Hybrid X25519+VRIL-KEM · < 5ms overhead |
 | 2026 Q2 | Upcoming | VRIL-AI v1 · VRIL-ZIP v3 · IETF draft for VRIL-KEM TLS extension |
 
----
+--
 
-## Philosophy
+<h2><img
+  src="images/icon-vortex.svg"
+  width="26px"
+  height="26px"
+  alt="VRIL LABS — vortex icon"
+  style="margin-right:10px;display:inline;"
+/> Philosophy</h2>
 
 ```
 01  Proof-First Design      Security is not claimed — it is machine-checked.
@@ -116,5 +146,5 @@ Every design decision traces to a named structural flaw in prior implementations
   src="images/divider-pulse.svg"
   width="100%"
   height="100%"
-  alt="VRIL LABS — implosion energy mark"
+  alt="VRIL LABS — animated divider"
 />
