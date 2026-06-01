@@ -111,3 +111,10 @@ Every design decision traces to a named structural flaw in prior implementations
 <sub>© 2026 VRIL LABS — Encrypting the future</sub>
 
 </div>
+
+<img
+  src="images/divider-pulse.svg"
+  width="100%"
+  height="100%"
+  alt="VRIL LABS — implosion energy mark"
+/>
