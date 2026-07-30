@@ -24,7 +24,7 @@
 <em><sub><small>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression &nbsp;·&nbsp; Deep-technology</small><sub></em></p>
 
 <p><sub><small>Where ancient wisdom meets computational power.<br/>
-Bridging the gap between primordial forces and modern science.</small><sub></p>
+At VRIL LABS, our goal is to bridge the gap between primordial forces and modern software.</small><sub></p>
 
 <br/>
 
@@ -113,7 +113,7 @@ Every design decision traces to a named structural flaw in prior implementations
 | 2026 Q1 | Integration | TLS 1.3 · OpenSSL provider · Hybrid X25519+VRIL-KEM · < 5ms overhead |
 | 2026 Q2 | Upcoming | VRIL-AI v1 · VRIL-ZIP v3 · IETF draft for VRIL-KEM TLS extension |
 
---
+---
 
 <h2><img
   src="images/icon-vortex.svg"
