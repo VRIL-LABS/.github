@@ -21,16 +21,15 @@
 <br/>
 
 <p><sup>ANCIENT KNOWLEDGE &nbsp;·&nbsp; FUTURE TECHNOLOGY</sup><br/>
-<em><sub><small>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression &nbsp;·&nbsp; Deep-technology</small><sub></em></p>
+<em><sub><small>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression &nbsp;·&nbsp; Deep-technology &nbsp;·&nbsp; Ancient wisdom meets computational power</small><sub></em></p>
 
-<p><sub><small>Where ancient wisdom meets computational power.<br/>
-At VRIL LABS, our goal is to bridge the gap between primordial forces and modern software.</small><sub></p>
+<p><sub><small>At VRIL LABS, our goal is to bridge the gap between primordial forces and modern software.</small><sub></p>
 
 <br/>
 
 [![vril.li](https://img.shields.io/badge/vril.li-visit-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li)
-[![Research](https://img.shields.io/badge/Research-Papers%20%26%20Proofs-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li#research)
-[![Contact](https://img.shields.io/badge/Contact-Secure%20Channel-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li#contact)
+[![Research](https://img.shields.io/badge/Research-Papers%20%26%20Proofs-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li/research)
+[![Contact](https://img.shields.io/badge/Contact-Secure%20Channel-1fe8a8?style=flat-square&labelColor=0b0c0b&color=1fe8a8)](https://vril.li/contact)
 
 </div>
 
