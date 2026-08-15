@@ -62,7 +62,7 @@
   style="margin-right:10px;display:inline;"
 /> Cryptographic Core</h2>
 
-VRIL-KEM is built on **Module-Learning-with-Errors** with parameters chosen to defeat both classical and quantum adversaries.
+[VRIL-KEM](https://github.com/VRIL-LABS/vril-kem) is built on **Module-Learning-with-Errors** with parameters chosen to defeat both classical and quantum adversaries.
 
 ```
 Ring dimension  n = 4096    NTT-friendly prime  q = 12289
