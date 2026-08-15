@@ -43,7 +43,7 @@
   style="margin-right:10px;display:inline;"
 /> Soverign Components</h2>
 
-> Four purpose-built and precision-engineered systems.
+> A showcase of purpose-built and precision-engineered systems.
 
 | Component | Domain | Key Specs |
 |---|---|---|
