@@ -41,7 +41,7 @@
   height="26px"
   alt="VRIL LABS — vortex icon"
   style="margin-right:10px;display:inline;"
-/> Soverign Components</h2>
+/> Sovereign Components</h2>
 
 > A showcase of purpose-built and precision-engineered systems.
 
