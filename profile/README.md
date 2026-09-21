@@ -23,7 +23,7 @@
 <p><sup>ancient knowledge &nbsp;·&nbsp; future technology</sup><br/>
 <em><sub><small>post-quantum cryptography &nbsp;·&nbsp; neural intelligence &nbsp;·&nbsp; entropy compression &nbsp;·&nbsp; deep-tech &nbsp;·&nbsp; ancient wisdom is computational power</small><sub></em></p>
 
-<p><sub><small>At VRIL LABS, our goal is to bridge the gap between alternative physics and modern software.</small><sub></p>
+<p><sub><small>At VRIL LABS, our goal is to bridge the gap between alternative physics and modern software. To learn more about what inspires us, go to <a href="https://vril.li/inspiration">vril.li/inspiration</a>.</small><sub></p>
 
 <br/>
 
