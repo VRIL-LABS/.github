@@ -20,8 +20,8 @@
 
 <br/>
 
-<p><sup>ANCIENT KNOWLEDGE &nbsp;·&nbsp; FUTURE TECHNOLOGY</sup><br/>
-<em><sub><small>Post-quantum cryptography &nbsp;·&nbsp; Neural intelligence &nbsp;·&nbsp; Entropy compression &nbsp;·&nbsp; Deep-technology &nbsp;·&nbsp; Ancient wisdom𐠷computational power</small><sub></em></p>
+<p><sup>ancient knowledge &nbsp;·&nbsp; future technology</sup><br/>
+<em><sub><small>post-quantum cryptography &nbsp;·&nbsp; neural intelligence &nbsp;·&nbsp; entropy compression &nbsp;·&nbsp; deep-tech &nbsp;·&nbsp; ancient wisdom is computational power</small><sub></em></p>
 
 <p><sub><small>At VRIL LABS, our goal is to bridge the gap between alternative physics and modern software.</small><sub></p>
 
